@@ -5,8 +5,8 @@ format:
   html:
     code-fold: true
     toc: true
-    include-before-body: ../slides/header.html
-    include-after-body: ../slides/footer-annotations.html
+    # include-before-body: ../slides/header.html
+    # include-after-body: ../slides/footer-annotations.html
 ---
 
 ```{r}
@@ -56,7 +56,9 @@ author:
 Install and load the following packages. If any are missing, run `install.packages("packagename")` first:
 
 ```{r}
-#| eval: false
+#| eval: true
+
+
 if (!requireNamespace("pacman", quietly = TRUE)) install.packages("pacman")
 
 pacman::p_load(
@@ -66,8 +68,22 @@ pacman::p_load(
   patchwork,
   flextable,
   lubridate,
-  broom
+  broom,
+  tibble
 )
+
+
+library(tibble)
+library(tidyverse)
+library(dplyr)
+library(dataRetrieval)
+library(flextable)
+library(patchwork)
+library(plotly)
+library(broom)
+library(maps)
+
+
 ```
 
 ::: callout-note
@@ -89,6 +105,9 @@ The data can be grabbed below!
 ```{r}
 #| label: data-pull
 #| cache: true
+
+
+
 
 gauges <- tribble(
   ~site_no,     ~name,                           ~state,
@@ -137,7 +156,7 @@ You are a water resources analyst. Each morning you deliver a reproducible snaps
 ```{r}
 my.date <- as.Date("2023-09-30")
 class(my.date)
-heelp
+
 ```
 
 **b.** Compute the **day-over-day change in discharge** for each gauge — how much flow rose or fell compared to the previous day. Store this as a new column called `flow_delta`. This tells you whether conditions are improving or deteriorating, which is often more actionable than the raw level alone.
@@ -818,7 +837,7 @@ Together these make model results as pipeable as any other data frame — straig
 :::
 
 ```{r}
-aug <- augment(lm_9b, data = join_predict_data)
+aug <-broom::augment(lm_9b, data = join_predict_data)
 
 tidy(lm_9b)
 
