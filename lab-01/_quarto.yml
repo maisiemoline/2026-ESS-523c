@@ -1,0 +1,12 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "2026 ESS 523c"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: lab-01/lab-01.qmd
+        text: Lab 1
