@@ -21,12 +21,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r}
-#| echo: false
-#| fig-align: center
-#| out-width: "100%"
-knitr::include_graphics('img/colorado-river.jpg')
-```
+
 
 In January 2023, the federal government announced the first-ever Tier 3 shortage on the Colorado River — triggering mandatory cuts to Arizona, Nevada, and Mexico. Those cuts were calculated from streamflow records like the ones you are about to pull.
 
@@ -142,6 +137,7 @@ You are a water resources analyst. Each morning you deliver a reproducible snaps
 ```{r}
 my.date <- as.Date("2023-09-30")
 class(my.date)
+heelp
 ```
 
 **b.** Compute the **day-over-day change in discharge** for each gauge — how much flow rose or fell compared to the previous day. Store this as a new column called `flow_delta`. This tells you whether conditions are improving or deteriorating, which is often more actionable than the raw level alone.

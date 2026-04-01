@@ -1,0 +1,16 @@
+tibble
+tidyverse
+ggplot2
+tidyr
+readr
+purrr
+dplyr
+stringr
+forcats
+lubridate
+dataRetrieval
+flextable
+patchwork
+plotly
+generics
+broom
