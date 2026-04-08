@@ -4,6 +4,7 @@ project:
 
 website:
   title: "2026 ESS 523c"
+  site-url: "https://maisiemoline.github.io/2026-ESS-523c/"
   navbar:
     left:
       - href: index.html
