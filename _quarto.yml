@@ -8,7 +8,7 @@ website:
     left:
       - href: index.html
         text: Home
-      - href: lab-01/lab-01.html
+      - href: lab-01.html
         text: Lab 1
       - href: lab-02.html
         text: Lab 2
