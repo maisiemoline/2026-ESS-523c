@@ -10,3 +10,5 @@ website:
         text: Home
       - href: lab-01/lab-01.qmd
         text: Lab 1
+      - href: lab-02.qmd
+        text: Lab 2
