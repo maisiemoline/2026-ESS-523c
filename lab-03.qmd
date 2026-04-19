@@ -521,7 +521,7 @@ func_sum<-function(arg1,arg2){
 Use your new function to summarize each of your tessellations and the
 original counties.
 
-```{r}
+```{r, echo=FALSE}
 func_sum(county_id,"Original County")
 func_sum(voroni_crop, "Voronoi")
 func_sum(tri_crop, "Triangulation")
