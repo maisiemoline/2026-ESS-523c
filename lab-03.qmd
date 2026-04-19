@@ -1,6 +1,7 @@
 ---
 title: "Lab 3: MAUP in Practice — Tessellations and Point-in-Polygon"
 subtitle: "National Dam Inventory (NID): From Counts to Local Clustering"
+author: "Maisie Moline"
 format:
   html:
     code-fold: true
